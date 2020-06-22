@@ -1,5 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/auth";
+import "firebase/database";
 // import "firebase/firestore";
 
 // Your web app's Firebase configuration
@@ -15,6 +16,8 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-// firebase.analytics();
+
+// Get a reference to the database service
+export const database = firebase.database();
 
 export default firebase;

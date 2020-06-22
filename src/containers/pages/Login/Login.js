@@ -25,6 +25,7 @@ class Login extends Component {
       .catch((err) => err);
     if (res) {
       alert("Success");
+      // console.log(res)
       this.setState({
         email: "",
         password: "",
